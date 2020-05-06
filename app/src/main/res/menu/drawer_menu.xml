@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Principal">
+    <menu>
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio">
+        </item>
+        <item
+            android:id="@+id/servicios"
+            android:icon="@drawable/ic_group"
+            android:title="Ver Servicios">
+        </item>
+        <item
+            android:id="@+id/cotizacion"
+            android:icon="@drawable/ic_speaker_notes"
+            android:title="Solicitar Cotización">
+        </item>
+    </menu>
+    </item>
+    <item
+        android:title="Nuestras redes">
+        <menu>
+            <item
+                android:id="@+id/face"
+                android:title="Facebook">
+            </item>
+            <item
+                android:id="@+id/twi"
+                android:title="Twitter">
+            </item>
+        </menu>
+
+
+    </item>
+</menu>
