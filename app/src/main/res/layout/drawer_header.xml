@@ -13,7 +13,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:background="#44a5dc"
-        android:text="PeruEventSoft"
+        android:text="PeruEvent Soft"
         android:textColor="#f2f2f2"
         tools:ignore="MissingConstraints" />
 
