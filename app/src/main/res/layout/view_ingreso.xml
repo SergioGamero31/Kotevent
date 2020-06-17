@@ -73,7 +73,6 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="22dp"
         android:background="@drawable/btn_ingreso"
-        android:onClick="onClickMain"
         android:text="Ingresar"
         android:textColor="@drawable/txt_btn_ingreso"
         app:layout_constraintBottom_toTopOf="@+id/btnSignup"
@@ -87,12 +86,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_registro"
+        android:onClick="onClickSig"
         android:text="Registrarse"
+        android:textColor="@drawable/txt_btn_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="431dp"
-        android:background="@drawable/btn_registro"
-        android:textColor="@drawable/txt_btn_registro"
-        android:onClick="onClick" />
+        tools:layout_editor_absoluteY="431dp" />
 </LinearLayout>
