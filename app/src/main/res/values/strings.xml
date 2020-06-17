@@ -11,4 +11,33 @@
     <string name="Solicitar">SOLICITAR COTIZACION</string>
     <string name="open">open</string>
     <string name="close">close</string>
+
+    <string-array name="ciudades">
+        <item>Lima</item>
+        <item>Arequipa</item>
+        <item>Trujillo</item>
+        <item>Chiclayo</item>
+        <item>Iquitos</item>
+        <item>Piura</item>
+        <item>Cusco</item>
+        <item>Chimbote</item>
+        <item>Huancayo</item>
+        <item>Tacna</item>
+    </string-array>
+
+    <string-array name="servicios">
+        <item>Diseño Web</item>
+        <item>Programación</item>
+        <item>Mensajería</item>
+        <item>Proyectos de innovación</item>
+        <item>Personalización</item>
+        <item>Social Media</item>
+    </string-array>
+
+    <string-array name="metodos">
+        <item>Efectivo</item>
+        <item>Deposito</item>
+        <item>Paypal</item>
+    </string-array>
+
 </resources>
