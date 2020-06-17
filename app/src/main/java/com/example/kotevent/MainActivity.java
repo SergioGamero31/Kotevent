@@ -17,8 +17,10 @@ import android.view.Gravity;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import Fragments.FragmentCotizacion;
+import Fragments.FragmentMensaje;
 import Fragments.FragmentServicios;
 import Fragments.MainFragment;
 
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
     ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
     NavigationView navigationView;
+
+    private FirebaseAuth mAuth;
 
     //variables para cargar el fragment principal
     FragmentManager fragmentManager;
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navigationView);
+
+        mAuth = FirebaseAuth.getInstance();
 
         // EVENTO ONCLICK AL NAVIGATION VIEW
         navigationView.setNavigationItemSelectedListener(this);
@@ -83,6 +89,12 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             fragmentTransaction.replace(R.id.container, new FragmentCotizacion());
             fragmentTransaction.commit();
         }
+        if(menuItem.getItemId() == R.id.mensaje){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new FragmentMensaje());
+            fragmentTransaction.commit();
+        }
         if(menuItem.getItemId() == R.id.face){
             Uri uri = Uri.parse(url1);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
@@ -92,6 +104,11 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             Uri uri = Uri.parse(url2);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
+        }
+        if(menuItem.getItemId() == R.id.logout){
+            mAuth.signOut();
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            finish();
         }
         return false;
     }
