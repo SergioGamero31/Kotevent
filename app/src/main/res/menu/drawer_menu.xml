@@ -17,21 +17,38 @@
             android:icon="@drawable/ic_speaker_notes"
             android:title="Solicitar Cotización">
         </item>
+        <item
+            android:id="@+id/mensaje"
+            android:icon="@drawable/ic_email"
+            android:title="Contactanos">
+        </item>
     </menu>
     </item>
     <item
         android:title="Nuestras redes">
         <menu>
             <item
+                android:icon="@drawable/ic_facebook"
                 android:id="@+id/face"
                 android:title="Facebook">
             </item>
             <item
+                android:icon="@drawable/ic_twitter"
                 android:id="@+id/twi"
                 android:title="Twitter">
             </item>
         </menu>
-
-
     </item>
+
+    <item
+        android:title="Salir">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Cerrar Sesión">
+            </item>
+        </menu>
+    </item>
+
 </menu>
