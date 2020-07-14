@@ -10,18 +10,23 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.io.File;
+
 import Fragments.FragmentCotizacion;
 import Fragments.FragmentMensaje;
 import Fragments.FragmentServicios;
+import Fragments.FragmentVideo;
 import Fragments.MainFragment;
 
 public class MainActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener{
@@ -94,6 +99,23 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, new FragmentMensaje());
             fragmentTransaction.commit();
+        }
+        if(menuItem.getItemId() == R.id.nosotros){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.container, new FragmentVideo());
+            fragmentTransaction.commit();
+        }
+        if (menuItem.getItemId() == R.id.juego){
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.NasheGames.SpaceTragedy");
+            try {
+                startActivity(launchIntent);
+            }
+            catch (ActivityNotFoundException e) {
+                Toast.makeText(this,
+                        "No se encontró la aplicación",
+                        Toast.LENGTH_LONG).show();
+            }
         }
         if(menuItem.getItemId() == R.id.face){
             Uri uri = Uri.parse(url1);

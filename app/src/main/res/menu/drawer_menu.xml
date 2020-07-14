@@ -9,7 +9,7 @@
         </item>
         <item
             android:id="@+id/servicios"
-            android:icon="@drawable/ic_group"
+            android:icon="@drawable/ic_servicios"
             android:title="Ver Servicios">
         </item>
         <item
@@ -21,6 +21,11 @@
             android:id="@+id/mensaje"
             android:icon="@drawable/ic_email"
             android:title="Contactanos">
+        </item>
+        <item
+            android:id="@+id/nosotros"
+            android:icon="@drawable/ic_group"
+            android:title="Nosotros">
         </item>
     </menu>
     </item>
@@ -36,6 +41,11 @@
                 android:icon="@drawable/ic_twitter"
                 android:id="@+id/twi"
                 android:title="Twitter">
+            </item>
+            <item
+                android:icon="@drawable/ic_headset_mic_black_24dp"
+                android:id="@+id/juego"
+                android:title="Space Tragedy">
             </item>
         </menu>
     </item>
