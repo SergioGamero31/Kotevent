@@ -109,7 +109,8 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             fragmentTransaction.commit();
         }
         if (menuItem.getItemId() == R.id.juego){
-            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.NasheGames.SpaceTragedy");
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage
+                    ("com.NasheGames.SpaceTragedy");
             try {
                 startActivity(launchIntent);
             }
