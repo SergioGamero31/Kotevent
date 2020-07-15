@@ -17,7 +17,9 @@ import java.util.ArrayList;
 
 import Adaptadores.AdapterServicio;
 import Entidades.Servicio;
-
+//Renzo Cuadros Salazar
+//Sergio Gamero Calle
+//Gricel Ramos Ramos
 public class FragmentServicios extends Fragment {
 
     AdapterServicio adapterServicio;

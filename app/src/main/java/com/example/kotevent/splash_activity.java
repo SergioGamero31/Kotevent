@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Handler;
 import android.view.WindowManager;
-
+//Renzo Cuadros Salazar
+//Sergio Gamero Calle
+//Gricel Ramos Ramos
 public class splash_activity extends AppCompatActivity {
 
     private final int DURACION_SPLASH = 1500;

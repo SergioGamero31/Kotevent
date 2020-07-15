@@ -1,5 +1,7 @@
 package Entidades;
-
+//Renzo Cuadros Salazar
+//Sergio Gamero Calle
+//Gricel Ramos Ramos
 public class Servicio {
     private String nombre;
     private String descrip;

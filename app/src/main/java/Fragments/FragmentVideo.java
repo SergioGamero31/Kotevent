@@ -14,7 +14,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.kotevent.R;
 
-
+//Renzo Cuadros Salazar
+//Sergio Gamero Calle
+//Gricel Ramos Ramos
 public class FragmentVideo extends Fragment {
     VideoView videoView;
     @Nullable

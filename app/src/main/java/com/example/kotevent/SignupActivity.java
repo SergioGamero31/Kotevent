@@ -20,7 +20,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//Renzo Cuadros Salazar
+//Sergio Gamero Calle
+//Gricel Ramos Ramos
 public class SignupActivity extends AppCompatActivity {
 
     private EditText TextName;

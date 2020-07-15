@@ -28,7 +28,9 @@ import Fragments.FragmentMensaje;
 import Fragments.FragmentServicios;
 import Fragments.FragmentVideo;
 import Fragments.MainFragment;
-
+//Renzo Cuadros Salazar
+//Sergio Gamero Calle
+//Gricel Ramos Ramos
 public class MainActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener{
     String url1, url2;
 
